@@ -1,0 +1,7 @@
+apiVersion: v2
+name: factorio-server
+description: A Factorio helm chart
+
+type: application
+
+version: 1.0.0

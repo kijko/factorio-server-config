@@ -1,0 +1,20 @@
+replicaCount: 1
+
+image:
+  tag: ~
+  pullPolicy: IfNotPresent
+
+env:
+  port: 34197
+
+nodePort: 30002
+
+game:
+  password: ~
+
+namespace: factorio-server
+
+saves:
+  storage: 1Gi
+  accessMode: ReadWriteOnce
+  hostPath: "/var/lib/k8-cluster-data/factorio/saves"
